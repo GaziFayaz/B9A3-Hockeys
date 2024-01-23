@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8a107502da.js" crossorigin="anonymous"></script>
+
+    <!-- google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF4240",
+                        secondary: "#424247",
+                        default: "#131318",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header>
+        <nav class="md:mx-32 md:my-12">
+            <div class="navbar bg-base-100 p-0">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-primary">Home</a></li>
+                            <li><a class="text-secondary">About</a></li>
+                            <li><a class="text-secondary">Pages</a></li>
+                            <li><a class="text-secondary">Blog</a></li>
+                            <li><a class="text-secondary">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold inline p-0">Hockey<span
+                            class="font-extrabold text-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-primary">Home</a></li>
+                        <li><a class="text-secondary">About</a></li>
+                        <li><a class="text-secondary">Pages</a></li>
+                        <li><a class="text-secondary">Blog</a></li>
+                        <li><a class="text-secondary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i
+                        class="fa-solid fa-magnifying-glass mr-6 text-2xl align-middle text-slate-400 hidden md:block"></i>
+                    <a class="btn text-white bg-primary font-bold  text-lg md:text-xl">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-5 md:mx-32">
+        <div class="carousel w-full max-h-[700px] mb-24">
+            <div id="slide1" class="carousel-item flex flex-col md:relative w-full">
+                <img src="./Images/1.png" class="w-full object-cover rounded-2xl h-full" />
+                <div
+                    class="absolute flex justify-between space-x-4  md:transform md:-translate-y-1/2 md:left-5 md:bottom-5">
+                    <a href="#slide2" class="btn btn-circle bg-default text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle  bg-default text-white">❯</a>
+                </div>
+                <div
+                    class="banner-text w-full mt-4 p-8 md:absolute md:right-5 md:bottom-5 md:w-2/5 bg-default text-white rounded-2xl md:min-w-80">
+                    <h3 class="banner-title text-2xl font-extrabold pb-4">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="banner-desc text-secondary font-medium text-slate-400 overflow-ellipsis">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/banner2.jpg" class="w-full  object-cover object-bottom rounded-2xl" />
+                <div class="absolute flex space-x-4 transform -translate-y-1/2 left-5 bottom-0">
+                    <a href="#slide1" class="btn btn-circle  bg-default text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle  bg-default text-white">❯</a>
+                </div>
+                <div class="banner-text absolute right-5 bottom-5 w-2/5 bg-default text-white p-8 rounded-2xl">
+                    <h3 class="banner-title text-2xl font-extrabold pb-4">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="banner-desc text-secondary font-medium text-slate-400">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
